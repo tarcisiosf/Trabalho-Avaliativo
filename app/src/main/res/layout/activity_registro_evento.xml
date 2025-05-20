@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroEvento">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Trabalho Avaliativo"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="#970808" />
+
+        <EditText
+            android:id="@+id/txtRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Texto do Registro" />
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btn_gravarEvento"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#970808"
+            android:onClick="gravar_evento"
+            android:text="Gravar Evento"
+            android:layout_gravity="center"/>
+
+        <ListView
+            android:id="@+id/Lista_eventos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
